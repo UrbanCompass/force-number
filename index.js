@@ -35,7 +35,7 @@ forceNumber.orNull = function forceNumberOrNull(input, options) {
   const numVal = forceNumber(input, options);
 
   return isNaN(numVal) ? null : numVal;
-}
+};
 
 function forceStringToNumber(str, decimalSymbol = '.') {
   let multiplier = 1;

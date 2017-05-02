@@ -8,6 +8,7 @@
     "test": "test"
   },
   "scripts": {
+    "lint": "eslint .",
     "test": "mocha --compilers js:babel-register"
   },
   "repository": {
@@ -29,6 +30,7 @@
     "babel": "^6.23.0",
     "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
     "babel-register": "^6.24.1",
+    "eslint": "^3.19.0",
     "mocha": "^3.3.0"
   }
 }
