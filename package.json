@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "Very aggressively converts value to number, if possible.",
   "main": "index.js",
+  "module": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "test"
+    "test": "mocha --compilers js:babel-register"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,11 @@
   "bugs": {
     "url": "https://github.com/onlywei/force-number/issues"
   },
-  "homepage": "https://github.com/onlywei/force-number#readme"
+  "homepage": "https://github.com/onlywei/force-number#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "mocha": "^3.3.0"
+  }
 }
