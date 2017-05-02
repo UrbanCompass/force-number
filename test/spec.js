@@ -1,5 +1,5 @@
 import assert from 'assert';
-import forceNumber from '../index.js';
+import forceNumber from '../src/index.js';
 
 describe('forceNumber', () => {
   it('should force values to numbers using forceNumber()', () => {
