@@ -1,0 +1,27 @@
+{
+  "name": "force-number",
+  "version": "1.0.0",
+  "description": "Very aggressively converts value to number, if possible.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onlywei/force-number.git"
+  },
+  "keywords": [
+    "convert",
+    "conversion",
+    "number"
+  ],
+  "author": "Wei Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/onlywei/force-number/issues"
+  },
+  "homepage": "https://github.com/onlywei/force-number#readme"
+}
