@@ -31,7 +31,7 @@ export default function forceNumber(rawInput, {decimalSymbol} = {decimalSymbol: 
  * @param {Object} [options] - passed through to forceNumber() as the second argument
  * @returns {Number|null}
  */
-export function forceNumberOrNull(input, options) {
+forceNumber.orNull = function forceNumberOrNull(input, options) {
   const numVal = forceNumber(input, options);
 
   return isNaN(numVal) ? null : numVal;

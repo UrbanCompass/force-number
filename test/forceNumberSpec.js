@@ -1,4 +1,4 @@
-import forceNumber, {forceNumberOrNull} from '../index.js';
+import forceNumber from '../index.js';
 
 describe('forceNumber', () => {
   it('should force values to numbers using forceNumber()', () => {
@@ -58,14 +58,14 @@ describe('forceNumber', () => {
   });
 });
 
-describe('forceNumberOrNull', () => {
+describe('forceNumber.orNull', () => {
   it('should produce null for values that cannot be coerced into Numbers', () => {
-    expect(forceNumberOrNull('asdbs45k')).toBe(45000);
+    expect(forceNumber.orNull('asdbs45k')).toBe(45000);
 
-    expect(forceNumberOrNull('whatever')).toBeNull();
-    expect(forceNumberOrNull(null)).toBeNull();
-    expect(forceNumberOrNull()).toBeNull();
-    expect(forceNumberOrNull({})).toBeNull();
-    expect(forceNumberOrNull([])).toBeNull();
+    expect(forceNumber.orNull('whatever')).toBeNull();
+    expect(forceNumber.orNull(null)).toBeNull();
+    expect(forceNumber.orNull()).toBeNull();
+    expect(forceNumber.orNull({})).toBeNull();
+    expect(forceNumber.orNull([])).toBeNull();
   });
 });

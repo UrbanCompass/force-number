@@ -52,9 +52,9 @@ forceNumber('whatever'); // NaN
 
 Also included is a convenience function that will automatically convert a `NaN` result to `null`:
 ```js
-import {forceNumberOrNull} from 'force-number';
+import forceNumber from 'force-number';
 
-forceNumberOrNull('whatever'); // null
+forceNumber.orNull('whatever'); // null
 ```
 
 Note that this is written entirely in ES2015+. If you need to use this in a runtime that does not
