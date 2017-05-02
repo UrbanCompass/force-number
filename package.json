@@ -2,13 +2,15 @@
   "name": "force-number",
   "version": "1.0.0",
   "description": "Very aggressively converts value to number, if possible.",
-  "main": "index.js",
-  "module": "index.js",
+  "main": "dist/force-number.js",
+  "module": "dist/force-number.mjs",
+  "browser": "dist/force-number.umd.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "build": "node tools/build.js",
+    "prepublish": "npm run build",
     "test": "eslint . && mocha --compilers js:babel-register"
   },
   "repository": {
