@@ -1,6 +1,6 @@
 {
   "name": "force-number",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Very aggressively converts value to number, if possible.",
   "main": "dist/force-number.js",
   "module": "dist/force-number.mjs",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/onlywei/force-number.git"
+    "url": "git+https://github.com/UrbanCompass/force-number.git"
   },
   "keywords": [
     "convert",
@@ -25,9 +25,9 @@
   "author": "Wei Wang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/onlywei/force-number/issues"
+    "url": "https://github.com/UrbanCompass/force-number/issues"
   },
-  "homepage": "https://github.com/onlywei/force-number#readme",
+  "homepage": "https://github.com/UrbanCompass/force-number#readme",
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-preset-env": "^1.4.0",
