@@ -11,7 +11,7 @@
   },
   "scripts": {
     "build": "node tools/build.js",
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "test": "eslint . && mocha --compilers js:babel-register"
   },
   "repository": {
