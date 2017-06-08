@@ -3,6 +3,10 @@
 const babel = require('babel-core');
 const fs = require('fs');
 
+if (!fs.existsSync('dist')) {
+  fs.mkdirSync('dist');
+}
+
 fs.writeFileSync('dist/force-number.js',
   babel.transformFileSync('src/index.js', {
     babelrc: false,
