@@ -6,6 +6,7 @@
   "module": "dist/force-number.mjs",
   "esnext": "dist/force-number.mjs",
   "browser": "dist/force-number.umd.js",
+  "types": "index.d.ts",
   "directories": {
     "test": "test"
   },
