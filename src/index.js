@@ -1,5 +1,6 @@
 const ONE_THOUSAND = Math.pow(10, 3);
 const ONE_MILLION = Math.pow(10, 6);
+const ONE_BILLION = Math.pow(10, 9);
 
 /**
  * Very aggressively converts value to number, if possible.
@@ -47,6 +48,11 @@ function forceStringToNumber(str, decimalSymbol = '.') {
   // 1M = 1000000, 3.2 million = 3200000
   if (/\dM/i.test(str) || /\d\s?million/i.test(str)) {
     multiplier = ONE_MILLION;
+  }
+
+  // 1B = 1000000000, 3.2 billion = 3200000000
+  if (/\dB/i.test(str) || /\d\s?billion/i.test(str)) {
+    multiplier = ONE_BILLION;
   }
 
   // Some formatters display negative numbers as (123) instead of -123.
