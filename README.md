@@ -15,7 +15,7 @@ return a number value. Here are some examples:
 '32.43.54'    ->  32.43 (multiple decimal points are ignored)
 ```
 
-Also supports the thousand and million multiplier in two formats:
+Also supports the thousand/million/billion multiplier in two formats:
 
 ```
 '5k'         -> 5000
@@ -25,6 +25,9 @@ Also supports the thousand and million multiplier in two formats:
 '5M'         -> 5000000
 '5m'         -> 5000000
 '5 million'  -> 5000000
+'5B'         -> 5000000000
+'5b'         -> 5000000000
+'5 billion'  -> 5000000000
 '5 meters'   -> 5
 ```
 
