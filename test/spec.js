@@ -37,6 +37,13 @@ describe('forceNumber', () => {
     assert.strictEqual(forceNumber('5 million'), 5000000);
   });
 
+  it('should support billions notation', () => {
+    assert.strictEqual(forceNumber('5B'), 5000000000);
+    assert.strictEqual(forceNumber('5b'), 5000000000);
+    assert.strictEqual(forceNumber('-$30.65235B'), -30652350000);
+    assert.strictEqual(forceNumber('5 billion'), 5000000000);
+  });
+
   it('should ignore everything after an extra decimal', () => {
     assert.strictEqual(forceNumber('32.43.54'), 32.43);
   });
