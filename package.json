@@ -1,6 +1,6 @@
 {
   "name": "force-number",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Very aggressively converts value to number, if possible.",
   "main": "dist/force-number.js",
   "module": "dist/force-number.mjs",
